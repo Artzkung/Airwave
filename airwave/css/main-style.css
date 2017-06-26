@@ -70,6 +70,22 @@ header .top-header-info {
 .navbar-nav > li > .dropdown-menu {
     border: 2px solid #288feb;
     border-radius: 0px;
+    transition: 0.4s all;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #fff;
+    box-shadow: 1px 1px 1px rgba(40,143,235,0.5);
+
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #288FEB;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #288FEB;
 }
 
 .dropdown-menu > li > a {
@@ -508,9 +524,7 @@ ul {
     25%  {opacity: 0.5; left:600px; right:0px;}
     75%  {opacity: 0.5; left:300px; right:0px;}
     100% {opacity: 0; left:0px; right:0px;}
-
 }
-
 
 /******************************Service***************************/
 .service {
@@ -817,38 +831,60 @@ textarea.form-control {
     .navbar-header {
         float: none;
     }
+
     .navbar-left,.navbar-right {
         float: none !important;
     }
+
     .navbar-toggle {
         display: block;
     }
+
     .navbar-collapse {
         border-top: 1px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
+
     .navbar-fixed-top {
     		top: 0;
     		border-width: 0 0 1px;
   	}
+
     .navbar-collapse.collapse {
         display: none!important;
     }
+
     .navbar-nav {
         float: none!important;
 		    margin-top: 7.5px;
   	}
-  	.navbar-nav>li {
+
+  	.navbar-nav > li {
         float: none;
     }
-    .navbar-nav>li>a {
+
+    .navbar-nav > li > a {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .collapse.in{
+
+    .collapse.in {
   		  display:block !important;
 	  }
+
     /*********************************************************/
+    .h1 {
+        font-size: 26px;
+    }
+
+    .h2 {
+        font-size: 22px;
+    }
+
+    .h3 {
+        font-size: 18px;
+    }
+
     .navbar-brand {
         padding-left: 0;
         width: 40%;
@@ -902,8 +938,8 @@ textarea.form-control {
     }
 
     .home-content {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 90px;
+        padding-bottom: 30px;
     }
 
     .home-txt-header {
@@ -929,18 +965,18 @@ textarea.form-control {
         margin-bottom: 20px;
     }
 
+    .pricing > .container > .row > .cloud {
+        display: none;
+    }
+
     .pricing-content {
         color: #fff;
         padding: 30px 0;
         text-align: center;
     }
 
-    .pricing-txt-header > .h1 {
-        font-size: 32px;
-    }
-
     .pricing-txt-body {
-        font-size: 22px;
+        font-size: 16px;
     }
 
     .cloud-price {
@@ -960,17 +996,31 @@ textarea.form-control {
         display: none;
     }
 
+    .cloud {
+        height: 0;
+    }
+
     .cloud-animated-1 {
-        display: none;
+        top: -320px;
     }
+
     .cloud-animated-2 {
-        display: none;
+        top: -420px;
     }
+
     .cloud-animated-3 {
-        display: none;
+        top: -400px;
     }
+
     .cloud-animated-4 {
-        display: none;
+        top: -420px;
+    }
+
+    @keyframes cloud {
+        0%   {opacity: 0; left:600px; right:0px;}
+        25%  {opacity: 0.5; left:400px; right:0px;}
+        75%  {opacity: 0.5; left:200px; right:0px;}
+        100% {opacity: 0; left:0px; right:0px;}
     }
 
     .setcol {
@@ -987,10 +1037,6 @@ textarea.form-control {
 
     .footer {
         text-align: center;
-    }
-
-    .footer-list {
-
     }
 
     .footer .h3 {
@@ -1013,6 +1059,34 @@ textarea.form-control {
 
     .setcol {
         margin-left: 0;
+    }
+
+    .home-content {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .cloud-animated-1 {
+        top: -350px;
+    }
+
+    .cloud-animated-2 {
+        top: -440px;
+    }
+
+    .cloud-animated-3 {
+        display: none;
+    }
+
+    .cloud-animated-4 {
+        top: -340px;
+    }
+
+    @keyframes cloud {
+        0%   {opacity: 0; left:250px; right:0px;}
+        25%  {opacity: 0.5; left:167px; right:0px;}
+        75%  {opacity: 0.5; left:84px; right:0px;}
+        100% {opacity: 0; left:0px; right:0px;}
     }
 
     .contactus {
@@ -1084,6 +1158,34 @@ textarea.form-control {
 }
 
 @media screen and (max-width: 320px) {
+    .home-content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .cloud-animated-1 {
+        top: -420px;
+    }
+
+    .cloud-animated-2 {
+        top: -500px;
+    }
+
+    .cloud-animated-3 {
+        display: none;
+    }
+
+    .cloud-animated-4 {
+        top: -330px;
+    }
+
+    @keyframes cloud {
+        0%   {opacity: 0; left:200px; right:0px;}
+        25%  {opacity: 0.5; left:134px; right:0px;}
+        75%  {opacity: 0.5; left:50px; right:0px;}
+        100% {opacity: 0; left:0px; right:0px;}
+    }
+
     .login-center {
         margin: 40px 0px;
         min-height: 430px;
