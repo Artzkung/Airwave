@@ -209,19 +209,19 @@ input {
 
 .h1 {
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .h2 {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 40px;
     margin: 0;
 }
 
 .h3 {
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 ul {
@@ -309,6 +309,13 @@ ul {
     color: #5bc0de;
 }
 
+.animated {
+    -webkit-animation-duration: 0s;
+    animation-duration: 0s;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+}
+
 /******************************Home***************************/
 .home {
    background: -webkit-linear-gradient(left, rgba(40,143,235,1), rgba(40,143,235,0.6));
@@ -347,7 +354,7 @@ ul {
   background: #233141;
   color: #fff;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   transition: 0.5s all;
 }
 
@@ -399,9 +406,9 @@ ul {
 }
 
 .btn-create-account-lg {
-    font-weight: bold;
+    font-weight: 500;
     font-size: 18px;
-    padding: 16px 20px!important;
+    padding: 14px 20px!important;
 }
 
 .form-control:hover,
@@ -669,7 +676,7 @@ ul {
 .serverinter-left {
     padding-top: 20px;
     padding-bottom: 20px;
-    margin: 0 auto;
+    margin-left: 100px;
 }
 
 .serverinter-right {
@@ -804,7 +811,7 @@ textarea.form-control {
 
 .contact-list {
     color: #9aadbf;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .footer-list {
@@ -813,15 +820,43 @@ textarea.form-control {
 
 .footer-list ul > li > a {
     color: #9aadbf;
-    font-weight: bold;
+    font-weight: 500;
     transition: 0.5s all;
 }
 
 /********************Responsive*********************/
 
 @media screen and (max-width: 1024px) {
-  .navbar-default .navbar-nav > li > a {
+    .navbar-default .navbar-nav > li > a {
+      color: #b2bbbd;
       font-size: 14px;
+    }
+
+    .navbar-default .navbar-nav > li > a:hover {
+        color: #fff;
+    }
+
+    .animated {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    .delay-2ms {
+        animation-delay: 0.2s;
+    }
+
+    .delay-3ms {
+        animation-delay: 0.3s;
+    }
+
+    .delay-4ms {
+        animation-delay: 0.4s;
+    }
+
+    .delay-5ms {
+        animation-delay: 0.5s;
     }
 }
 
@@ -845,10 +880,10 @@ textarea.form-control {
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
 
-    .navbar-fixed-top {
-    		top: 0;
-    		border-width: 0 0 1px;
-  	}
+    .navbar-default .navbar-collapse {
+        color: #fff;
+        background-color: #3e474f;
+    }
 
     .navbar-collapse.collapse {
         display: none!important;
@@ -857,6 +892,7 @@ textarea.form-control {
     .navbar-nav {
         float: none!important;
 		    margin-top: 7.5px;
+        overflow: hidden;
   	}
 
   	.navbar-nav > li {
@@ -901,10 +937,13 @@ textarea.form-control {
 
     .navbar-right .dropdown-menu {
         left: 0;
+
     }
 
     .login {
-        margin: 8px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-left : 0;
     }
 
     .logo-login {
@@ -927,7 +966,9 @@ textarea.form-control {
     }
 
     .create-account {
-        margin: 8px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-left : 0;
     }
 
     .btn-create-account {
@@ -963,6 +1004,10 @@ textarea.form-control {
     .dedicate-inter-img {
         margin-top: 25px;
         margin-bottom: 20px;
+    }
+
+    .serverinter-left {
+        margin-left: 0;
     }
 
     .pricing > .container > .row > .cloud {
@@ -1164,7 +1209,7 @@ textarea.form-control {
     }
 
     .cloud-animated-1 {
-        top: -420px;
+        top: -410px;
     }
 
     .cloud-animated-2 {
@@ -1180,9 +1225,9 @@ textarea.form-control {
     }
 
     @keyframes cloud {
-        0%   {opacity: 0; left:200px; right:0px;}
-        25%  {opacity: 0.5; left:134px; right:0px;}
-        75%  {opacity: 0.5; left:50px; right:0px;}
+        0%   {opacity: 0; left:190px; right:0px;}
+        25%  {opacity: 0.5; left:127px; right:0px;}
+        75%  {opacity: 0.5; left:64px; right:0px;}
         100% {opacity: 0; left:0px; right:0px;}
     }
 
